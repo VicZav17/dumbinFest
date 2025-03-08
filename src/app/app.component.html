@@ -32,10 +32,8 @@
 
 
   <mat-card-content id="home" style="font-size: larger; text-align: center;">
-    <div class="banner-container">
       <!-- Imagen para dispositivos móviles -->
-      <img src="imgs/dumbinfest2025.gif" alt="Mobile Image" />
-    </div>
+      <img src="imgs/dumbinfest2025.gif" alt="Mobile Image" class="mobile-image" />
     <p>
       Se acerca el tercer piso y con ello las ganas de festejar, agradecer y celebrar con personas que han dejado
       huellas y memorias invaluables para mí y mi familia.
@@ -51,7 +49,7 @@
       <p>
         En el lugar que me vio crecer: Marte #165, col. Rural Atlas, SLP
       </p>
-      <iframe class="map-responsive" style="position: relative; width: 80%; height: 100px"
+      <iframe style="position: relative; width: 80%; height: 100px"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d388.3444250375565!2d-101.00907410299892!3d22.18022033212204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a9f13fe38b47f%3A0xf8d04476a4d44536!2sMarte%20165%2C%20Rural%20Atlas%201ra%20Secc%2C%2078130%20San%20Luis%20Potos%C3%AD%2C%20S.L.P.!5e0!3m2!1ses!2smx!4v1726207560074!5m2!1ses!2smx"
         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
@@ -80,7 +78,8 @@
     </mat-card-title>
 
     <img mat-card-image [src]="images[0]" alt="Imagen" class="pip" style="margin-top: 10px;" />
-    <mat-card-content style="margin-top: 10px;" align="center"> <iframe width="350" height="315"
+    <mat-card-content style="margin-top: 10px; display: flex; justify-content: center; align-items: center;"> <iframe
+        style="position: relative; width: 100%; height: 300px"
         src="https://www.youtube.com/embed/67e3J-ybLEE?si=LfWqyLtXHqNRSEJk" title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></mat-card-content>
@@ -91,12 +90,15 @@
     <hr style="border: 1px solid white; ">
   </mat-card-content>
 
-  <mat-card-content id="galery" align="center">
+  <mat-card-content id="galery">
 
-      <mat-card-title> <h4>Galería</h4></mat-card-title>
+    <mat-card-title align="center">
+      <h4>Galería</h4>
+    </mat-card-title>
     <mat-card-content>
-      <p style="font-size: larger;">
-        Gracias por ser parte de mi historia y por hacer que esta fiesta sea inolvidable. ¡Salud por lo que viene! #30YearsOfMadness 🎉🍻
+      <p style="font-size: larger; text-align: center;">
+        Gracias por ser parte de mi historia y por hacer que esta fiesta sea inolvidable. ¡Salud por lo que viene!
+        #30YearsOfMadness 🎉🍻
       </p>
       <mat-grid-list cols="3" rowHeight="4:3" gutterSize="8px">
         <mat-grid-tile *ngFor="let image of images2">
@@ -123,7 +125,9 @@
 
   <mat-card-content id="event" class="event">
     <div *ngIf="day">
-      <mat-card-title> <h4>¡Cuenta Regresiva</h4></mat-card-title>
+      <mat-card-title>
+        <h4>¡Cuenta Regresiva</h4>
+      </mat-card-title>
 
       <!-- Contenedor de los elementos (día, hora, minutos, segundos) -->
       <div class="time-container">
@@ -160,7 +164,9 @@
           <div class="time-label">Segundos</div>
         </mat-card>
       </div>
-      <mat-card-title> <h4> para Dumbin Fest 2025!</h4></mat-card-title>
+      <mat-card-title>
+        <h4> para Dumbin Fest 2025!</h4>
+      </mat-card-title>
     </div>
 
   </mat-card-content>

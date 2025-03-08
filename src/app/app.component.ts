@@ -71,7 +71,8 @@ export class AppComponent implements OnInit {
         return;
       }
 
-      this.startCountdown();
+      this.startCountdown();  
+      console.log("TRAKAAAAAAAAAAAAA")
     }
   }
 

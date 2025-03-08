@@ -7,7 +7,11 @@ body {
   font-family: "Poppins", sans-serif;
 
   background-color: #111c2d;
-  color: white; /* ✅ Texto en blanco */
+  color: white;
+  /* ✅ Texto en blanco */
+  overflow-x: hidden;
+  /* Evita el desplazamiento horizontal */
+  width: 100%;
 }
 
 a,
@@ -20,17 +24,23 @@ h5,
 h6,
 span,
 div {
-  color: white; /* ✅ Asegurar que todos los textos sean blancos */
+  color: white;
+  /* ✅ Asegurar que todos los textos sean blancos */
 }
 
 .mat-toolbar {
-  background-color: #222a3a !important; /* ✅ Toolbar oscuro */
+  background-color: #222a3a !important;
+  /* ✅ Toolbar oscuro */
   color: white !important;
   position: fixed;
-  top: 0; /* Fija el toolbar en la parte superior */
-  left: 0; /* Fija el toolbar en la parte izquierda */
-  right: 0; /* Fija el toolbar en la parte derecha */
-  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  top: 0;
+  /* Fija el toolbar en la parte superior */
+  left: 0;
+  /* Fija el toolbar en la parte izquierda */
+  right: 0;
+  /* Fija el toolbar en la parte derecha */
+  z-index: 1000;
+  /* Asegura que esté por encima de otros elementos */
 }
 
 .mat-list-item {
