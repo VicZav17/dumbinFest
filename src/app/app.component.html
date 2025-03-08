@@ -1,0 +1,82 @@
+<mat-toolbar
+  style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #111c2d;
+  "
+>
+  <span>Dumbin Fest 2025</span>
+  <span class="example-spacer"></span>
+  <ul style="display: flex; list-style: none; margin: 0; padding: 0;">
+    <li style="margin-right: 20px;">
+      <mat-icon>home</mat-icon>
+    </li>
+    <li style="margin-right: 20px;">
+      <mat-icon>place</mat-icon>
+    </li>
+    <li style="margin-right: 20px;">
+      <mat-icon>event_upcoming</mat-icon>
+    </li>
+  </ul>
+  <!-- <button
+    mat-icon-button
+    class="example-icon favorite-icon"
+    aria-label="Example icon-button with heart icon"
+  >
+    <mat-icon style="color: white">favorite</mat-icon>
+  </button>
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with share icon"
+  >
+    <mat-icon style="color: white">share</mat-icon>
+  </button> -->
+</mat-toolbar>
+
+<mat-card
+  [appearance]="'raised'"
+  style="background-color: #111c2d; margin-top: 56px"
+>
+  <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile>1</mat-grid-tile>
+    <mat-grid-tile>2</mat-grid-tile>
+    <mat-grid-tile>3</mat-grid-tile>
+    <mat-grid-tile>4</mat-grid-tile>
+  </mat-grid-list>
+
+  <mat-card-header>
+    <mat-card-title>Sección 1</mat-card-title>
+  </mat-card-header>
+  <mat-card-content> </mat-card-content>
+
+  
+
+  <mat-card-content>
+    <p>Ven a divertirte con grupo la fuerza!</p>
+
+    <mat-tab-group preserveContent>
+      <mat-tab label="First"> </mat-tab>
+      <mat-tab label="Second">
+        <iframe
+          width="350"
+          height="315"
+          src="https://www.youtube.com/embed/B-lipaiZII8"
+          style="border: 0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe
+      ></mat-tab>
+    </mat-tab-group>
+  </mat-card-content>
+
+  <mat-card-header>
+    <mat-card-title>Seccsión 2</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>Este es el contenido de la sección 2.</p>
+  </mat-card-content>
+</mat-card>
