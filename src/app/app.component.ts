@@ -16,7 +16,6 @@ import { CommonModule } from '@angular/common';
     MatIconModule,
     MatGridListModule,
     MatCard,
-    MatCardHeader,
     MatCardTitle,
     MatCardContent,
     MatTabsModule,
@@ -30,20 +29,20 @@ export class AppComponent implements OnInit {
   title = 'dumbinFest';
 
   images: string[] = [
-    '/imgs/1.jpeg',
-    '/imgs/2.jpeg'
+    'imgs/1.jpeg',
+    'imgs/2.jpeg'
   ];
 
   images2: string[] = [
-    '/imgs/3.jpeg',
-    '/imgs/4.jpeg',
-    '/imgs/5.jpeg',
-    '/imgs/6.jpeg',
-    '/imgs/7.jpeg',
-    '/imgs/8.jpeg',
-    '/imgs/9.jpeg',
-    '/imgs/10.jpeg',
-    '/imgs/11.jpeg',
+    'imgs/3.jpeg',
+    'imgs/4.jpeg',
+    'imgs/5.jpeg',
+    'imgs/6.jpeg',
+    'imgs/7.jpeg',
+    'imgs/8.jpeg',
+    'imgs/9.jpeg',
+    'imgs/10.jpeg',
+    'imgs/11.jpeg',
   ];
 
   selectedImage: string = '';
