@@ -26,6 +26,11 @@ div {
 .mat-toolbar {
   background-color: #222a3a !important; /* ✅ Toolbar oscuro */
   color: white !important;
+  position: fixed;
+  top: 0; /* Fija el toolbar en la parte superior */
+  left: 0; /* Fija el toolbar en la parte izquierda */
+  right: 0; /* Fija el toolbar en la parte derecha */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
 
 .mat-list-item {
